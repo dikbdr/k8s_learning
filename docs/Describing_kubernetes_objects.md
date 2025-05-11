@@ -53,74 +53,74 @@ spec:
         - containerPort: 80
     ```
 ```
-    ---
+---
 
-    Kubernetes objects are persistent entities in the Kubernetes system. They represent the desired state of your cluster,
+Kubernetes objects are persistent entities in the Kubernetes system. They represent the desired state of your cluster,
 such as the applications you want to run, the resources they should use, and the policies around their behavior. Below are some commonly used Kubernetes objects:
 
-    ## 1. **Pod**
-       - A Pod is the smallest deployable unit in Kubernetes.
-       - It encapsulates one or more containers, storage resources, and a network identity.
-       - Example:
-         ```yaml
-         apiVersion: v1
-         kind: Pod
-         metadata:
-           name: example-pod
-         spec:
-           containers:
-           - name: nginx-container
-             image: nginx:1.21
-         ```
+## 1. **Pod**
+    - A Pod is the smallest deployable unit in Kubernetes.
+    - It encapsulates one or more containers, storage resources, and a network identity.
+    - Example:
+        ```yaml
+        apiVersion: v1
+        kind: Pod
+        metadata:
+        name: example-pod
+        spec:
+        containers:
+        - name: nginx-container
+            image: nginx:1.21
+        ```
 
-    ## 2. **Deployment**
-       - A Deployment provides declarative updates for Pods and ReplicaSets.
-       - It ensures that the desired number of Pods are running at all times.
-       - Example:
-         ```yaml
-         apiVersion: apps/v1
-         kind: Deployment
-         metadata:
-           name: example-deployment
-         spec:
-           replicas: 3
-           selector:
-             matchLabels:
-               app: nginx
-           template:
-             metadata:
-               labels:
-                 app: nginx
-             spec:
-               containers:
-               - name: nginx-container
-                 image: nginx:1.21
-         ```
+## 2. **Deployment**
+    - A Deployment provides declarative updates for Pods and ReplicaSets.
+    - It ensures that the desired number of Pods are running at all times.
+    - Example:
+        ```yaml
+        apiVersion: apps/v1
+        kind: Deployment
+        metadata:
+        name: example-deployment
+        spec:
+        replicas: 3
+        selector:
+            matchLabels:
+            app: nginx
+        template:
+            metadata:
+            labels:
+                app: nginx
+            spec:
+            containers:
+            - name: nginx-container
+                image: nginx:1.21
+        ```
 
-    ## 3. **Service**
-       - A Service provides a stable network endpoint to access a set of Pods.
-       - It abstracts the underlying Pods and enables load balancing.
-       - Example:
-         ```yaml
-         apiVersion: v1
-         kind: Service
-         metadata:
-           name: example-service
-         spec:
-           selector:
-             app: nginx
-           ports:
-           - protocol: TCP
-             port: 80
-             targetPort: 80
-           type: ClusterIP
-         ```
+## 3. **Service**
+    - A Service provides a stable network endpoint to access a set of Pods.
+    - It abstracts the underlying Pods and enables load balancing.
+    - Example:
+        ```yaml
+        apiVersion: v1
+        kind: Service
+        metadata:
+        name: example-service
+        spec:
+        selector:
+            app: nginx
+        ports:
+        - protocol: TCP
+            port: 80
+            targetPort: 80
+        type: ClusterIP
+        ```
 
-    ---
+---
 
-    ## Visualizing Kubernetes Objects
+## Visualizing Kubernetes Objects
 
-    While diagrams cannot be directly embedded in Markdown, you can use tools like [Kubernetes Dashboard](https://kubernetes.io/docs/tasks/access-application-cluster/web-ui-dashboard/) or third-party visualization tools to view your cluster's objects. Below is a conceptual diagram of how Pods, Deployments, and Services interact:
+While diagrams cannot be directly embedded in Markdown, you can use tools like [Kubernetes Dashboard](https://kubernetes.io/docs/tasks/access-application-cluster/web-ui-dashboard/) or third-party visualization tools to view your cluster's objects. Below is a conceptual diagram of how Pods, Deployments, and Services interact:
 
     ```
     +-------------------+       +-------------------+
