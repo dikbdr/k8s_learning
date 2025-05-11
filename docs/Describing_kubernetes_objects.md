@@ -47,10 +47,10 @@ metadata:
 spec:
   containers:
   - name: my-container
-    ```yaml
-        image: nginx:1.21
-        ports:
-        - containerPort: 80
+```yaml
+    image: nginx:1.21
+    ports:
+    - containerPort: 80
     ```
 ```
 ---
