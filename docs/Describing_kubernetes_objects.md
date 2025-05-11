@@ -51,7 +51,7 @@ spec:
         ports:
         - containerPort: 80
     ```
-
+```
     ---
 
 ## Kubernetes Objects Overview
