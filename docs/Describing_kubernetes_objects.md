@@ -51,16 +51,9 @@ spec:
         image: nginx:1.21
         ports:
         - containerPort: 80
-<<<<<<< HEAD
     ```
 ```
     ---
-=======
-```
----
-
-# Kubernetes Objects Overview
->>>>>>> 4bb0af16dc5fa24378a91b4faffb8abdda4f0719
 
     Kubernetes objects are persistent entities in the Kubernetes system. They represent the desired state of your cluster,
 such as the applications you want to run, the resources they should use, and the policies around their behavior. Below are some commonly used Kubernetes objects:
