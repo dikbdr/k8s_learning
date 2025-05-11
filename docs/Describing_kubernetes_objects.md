@@ -122,7 +122,7 @@ such as the applications you want to run, the resources they should use, and the
 
 While diagrams cannot be directly embedded in Markdown, you can use tools like [Kubernetes Dashboard](https://kubernetes.io/docs/tasks/access-application-cluster/web-ui-dashboard/) or third-party visualization tools to view your cluster's objects. Below is a conceptual diagram of how Pods, Deployments, and Services interact:
 
-    ```
+```
     +-------------------+       +-------------------+
     |   Deployment      |       |     Service       |
     | (Manages Pods)    |       | (Exposes Pods)    |
@@ -133,10 +133,10 @@ While diagrams cannot be directly embedded in Markdown, you can use tools like [
     |       Pod         |<----->|       Pod         |
     | (Runs Containers) |       | (Runs Containers) |
     +-------------------+       +-------------------+
-    ```
+```
 
 For more detailed diagrams, consider using tools like [PlantUML](https://plantuml.com/) or [Mermaid](https://mermaid-js.github.io/).
-```
+
 
 ---
 
