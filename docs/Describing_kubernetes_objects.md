@@ -54,8 +54,7 @@ spec:
 ```
 ---
 
-Kubernetes objects are persistent entities in the Kubernetes system. They represent the desired state of your cluster,
-such as the applications you want to run, the resources they should use, and the policies around their behavior. Below are some commonly used Kubernetes objects:
+**Kubernetes objects are persistent entities in the Kubernetes system. They represent the desired state of your cluster, such as the applications you want to run, the resources they should use, and the policies around their behavior. Below are some commonly used Kubernetes objects:**
 
 ### 1. **Pod**
 - A Pod is the smallest deployable unit in Kubernetes.
