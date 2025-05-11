@@ -135,7 +135,7 @@ While diagrams cannot be directly embedded in Markdown, you can use tools like [
     +-------------------+       +-------------------+
     ```
 
-    For more detailed diagrams, consider using tools like [PlantUML](https://plantuml.com/) or [Mermaid](https://mermaid-js.github.io/).
+For more detailed diagrams, consider using tools like [PlantUML](https://plantuml.com/) or [Mermaid](https://mermaid-js.github.io/).
 ```
 
 ---
